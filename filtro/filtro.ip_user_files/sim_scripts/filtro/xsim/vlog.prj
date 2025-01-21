@@ -1,0 +1,47 @@
+verilog xil_defaultlib --include "../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ec67/hdl" --include "../../../../filtro.srcs/sources_1/bd/filtro/ipshared/70cf/hdl" --include "../../../../filtro.srcs/sources_1/bd/filtro/ip/filtro_processing_system7_0_0" --include "../../../../filtro.srcs/sources_1/bd/filtro/ipshared/58e2/hdl" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ip/filtro_processing_system7_0_0/sim/filtro_processing_system7_0_0.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/AddWeighted.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/AXIvideo2Mat.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/Block_proc.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/CvtColor.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/CvtColor_1.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/Duplicate.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/fifo_w11_d1_A.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/fifo_w12_d1_A.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/fifo_w8_d1_A.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/Filter2D.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/Filter2D_1.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/Filter2D_1_k_buf_eOg.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/GaussianBlur.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/image_filter.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/image_filter_ama_jbC.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/image_filter_daddrcU.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/image_filter_dmulsc4.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/image_filter_mac_cud.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/image_filter_mac_dEe.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/image_filter_mac_kbM.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/image_filter_mac_lbW.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/image_filter_mac_pcA.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/image_filter_mac_qcK.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/image_filter_mul_bkb.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/image_filter_mul_ibs.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/image_filter_mux_hbi.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/image_filter_sitotde.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/Mat2AXIvideo.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/Sobel.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/Sobel_1.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/start_for_AddWeigyd2.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/start_for_CvtColoudo.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/start_for_CvtColozec.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/start_for_DuplicawdI.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/start_for_Gaussiavdy.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/start_for_Mat2AXIAem.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/start_for_Sobel_1xdS.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ipshared/ade2/hdl/verilog/start_for_Sobel_U0.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ip/filtro_xbar_1/sim/filtro_xbar_1.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/ip/filtro_auto_pc_0/sim/filtro_auto_pc_0.v" \
+"../../../../filtro.srcs/sources_1/bd/filtro/sim/filtro.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
