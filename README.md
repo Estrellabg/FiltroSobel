@@ -26,8 +26,8 @@ Incluye configuraciones y archivos generados para síntesis y simulación:
 ## Requisitos
 
 Para utilizar este proyecto, asegúrate de contar con lo siguiente:
-- **Vivado HLS**: Para trabajar con los archivos de síntesis y simulación.
-- **Compilador C++**: Para compilar y ejecutar el código fuente.
+- **Vivado 2018.3 HLS**
+- **Vivado 2018.3**
 
 ## Instrucciones de Uso
 
