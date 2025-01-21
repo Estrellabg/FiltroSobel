@@ -1,0 +1,179 @@
+
+
+================================================================
+== Vivado HLS Report for 'CvtColor'
+================================================================
+* Date:           Tue Jan 21 09:50:14 2025
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        filterSobel
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z045ffg900-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     6.802|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-------+-----+-------+---------+
+    |   Latency   |   Interval  | Pipeline|
+    | min |  max  | min |  max  |   Type  |
+    +-----+-------+-----+-------+---------+
+    |    1|  51301|    1|  51301|   none  |
+    +-----+-------+-----+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------+-----+-------+----------+-----------+-----------+---------+----------+
+        |               |   Latency   | Iteration|  Initiation Interval  |   Trip  |          |
+        |   Loop Name   | min |  max  |  Latency |  achieved |   target  |  Count  | Pipelined|
+        +---------------+-----+-------+----------+-----------+-----------+---------+----------+
+        |- loop_height  |    0|  51300|  3 ~ 228 |          -|          -| 0 ~ 225 |    no    |
+        | + loop_width  |    0|    225|         2|          1|          1| 0 ~ 225 |    yes   |
+        +---------------+-----+-------+----------+-----------+-----------+---------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  |
++-----------------+---------+-------+--------+--------+
+|DSP              |        -|      -|       -|       -|
+|Expression       |        -|      -|       0|      33|
+|FIFO             |        -|      -|       -|       -|
+|Instance         |        -|      -|       -|       -|
+|Memory           |        -|      -|       -|       -|
+|Multiplexer      |        -|      -|       -|      37|
+|Register         |        -|      -|      51|       -|
++-----------------+---------+-------+--------+--------+
+|Total            |        0|      0|      51|      70|
++-----------------+---------+-------+--------+--------+
+|Available        |     1090|    900|  437200|  218600|
++-----------------+---------+-------+--------+--------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0   |
++-----------------+---------+-------+--------+--------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |i_fu_205_p2                       |     +    |      0|  0|   8|           8|           1|
+    |j_fu_220_p2                       |     +    |      0|  0|   8|           8|           1|
+    |ap_block_pp0_stage0_01001         |    and   |      0|  0|   1|           1|           1|
+    |tmp_69_i_fu_215_p2                |   icmp   |      0|  0|   5|           9|           9|
+    |tmp_i_fu_200_p2                   |   icmp   |      0|  0|   5|           9|           9|
+    |ap_block_state1                   |    or    |      0|  0|   1|           1|           1|
+    |ap_block_state4_pp0_stage0_iter1  |    or    |      0|  0|   1|           1|           1|
+    |ap_enable_pp0                     |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_reg_pp0_iter1           |    xor   |      0|  0|   2|           2|           1|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |Total                             |          |      0|  0|  33|          40|          26|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------+----+-----------+-----+-----------+
+    |             Name            | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                    |   4|          5|    1|          5|
+    |ap_done                      |   3|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1      |   3|          3|    1|          3|
+    |i_i_reg_174                  |   3|          2|    8|         16|
+    |j_i_reg_185                  |   3|          2|    8|         16|
+    |p_dst_data_stream_0_V_blk_n  |   3|          2|    1|          2|
+    |p_dst_data_stream_1_V_blk_n  |   3|          2|    1|          2|
+    |p_dst_data_stream_2_V_blk_n  |   3|          2|    1|          2|
+    |p_src_cols_V_blk_n           |   3|          2|    1|          2|
+    |p_src_data_stream_V_blk_n    |   3|          2|    1|          2|
+    |p_src_rows_V_blk_n           |   3|          2|    1|          2|
+    |real_start                   |   3|          2|    1|          2|
+    +-----------------------------+----+-----------+-----+-----------+
+    |Total                        |  37|         28|   26|         56|
+    +-----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------+---+----+-----+-----------+
+    |            Name           | FF| LUT| Bits| Const Bits|
+    +---------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                  |  4|   0|    4|          0|
+    |ap_done_reg                |  1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0    |  1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1    |  1|   0|    1|          0|
+    |i_i_reg_174                |  8|   0|    8|          0|
+    |i_reg_240                  |  8|   0|    8|          0|
+    |j_i_reg_185                |  8|   0|    8|          0|
+    |p_src_cols_V_read_reg_226  |  9|   0|    9|          0|
+    |p_src_rows_V_read_reg_231  |  9|   0|    9|          0|
+    |start_once_reg             |  1|   0|    1|          0|
+    |tmp_69_i_reg_245           |  1|   0|    1|          0|
+    +---------------------------+---+----+-----+-----------+
+    |Total                      | 51|   0|   51|          0|
+    +---------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------+-----+-----+------------+-----------------------+--------------+
+|           RTL Ports          | Dir | Bits|  Protocol  |     Source Object     |    C Type    |
++------------------------------+-----+-----+------------+-----------------------+--------------+
+|ap_clk                        |  in |    1| ap_ctrl_hs |        CvtColor       | return value |
+|ap_rst                        |  in |    1| ap_ctrl_hs |        CvtColor       | return value |
+|ap_start                      |  in |    1| ap_ctrl_hs |        CvtColor       | return value |
+|start_full_n                  |  in |    1| ap_ctrl_hs |        CvtColor       | return value |
+|ap_done                       | out |    1| ap_ctrl_hs |        CvtColor       | return value |
+|ap_continue                   |  in |    1| ap_ctrl_hs |        CvtColor       | return value |
+|ap_idle                       | out |    1| ap_ctrl_hs |        CvtColor       | return value |
+|ap_ready                      | out |    1| ap_ctrl_hs |        CvtColor       | return value |
+|start_out                     | out |    1| ap_ctrl_hs |        CvtColor       | return value |
+|start_write                   | out |    1| ap_ctrl_hs |        CvtColor       | return value |
+|p_src_rows_V_dout             |  in |    9|   ap_fifo  |      p_src_rows_V     |    pointer   |
+|p_src_rows_V_empty_n          |  in |    1|   ap_fifo  |      p_src_rows_V     |    pointer   |
+|p_src_rows_V_read             | out |    1|   ap_fifo  |      p_src_rows_V     |    pointer   |
+|p_src_cols_V_dout             |  in |    9|   ap_fifo  |      p_src_cols_V     |    pointer   |
+|p_src_cols_V_empty_n          |  in |    1|   ap_fifo  |      p_src_cols_V     |    pointer   |
+|p_src_cols_V_read             | out |    1|   ap_fifo  |      p_src_cols_V     |    pointer   |
+|p_src_data_stream_V_dout      |  in |    8|   ap_fifo  |  p_src_data_stream_V  |    pointer   |
+|p_src_data_stream_V_empty_n   |  in |    1|   ap_fifo  |  p_src_data_stream_V  |    pointer   |
+|p_src_data_stream_V_read      | out |    1|   ap_fifo  |  p_src_data_stream_V  |    pointer   |
+|p_dst_data_stream_0_V_din     | out |    8|   ap_fifo  | p_dst_data_stream_0_V |    pointer   |
+|p_dst_data_stream_0_V_full_n  |  in |    1|   ap_fifo  | p_dst_data_stream_0_V |    pointer   |
+|p_dst_data_stream_0_V_write   | out |    1|   ap_fifo  | p_dst_data_stream_0_V |    pointer   |
+|p_dst_data_stream_1_V_din     | out |    8|   ap_fifo  | p_dst_data_stream_1_V |    pointer   |
+|p_dst_data_stream_1_V_full_n  |  in |    1|   ap_fifo  | p_dst_data_stream_1_V |    pointer   |
+|p_dst_data_stream_1_V_write   | out |    1|   ap_fifo  | p_dst_data_stream_1_V |    pointer   |
+|p_dst_data_stream_2_V_din     | out |    8|   ap_fifo  | p_dst_data_stream_2_V |    pointer   |
+|p_dst_data_stream_2_V_full_n  |  in |    1|   ap_fifo  | p_dst_data_stream_2_V |    pointer   |
+|p_dst_data_stream_2_V_write   | out |    1|   ap_fifo  | p_dst_data_stream_2_V |    pointer   |
++------------------------------+-----+-----+------------+-----------------------+--------------+
+
